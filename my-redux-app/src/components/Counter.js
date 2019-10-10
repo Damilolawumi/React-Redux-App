@@ -2,10 +2,14 @@ import React from 'react';
 import * as actionCreator from '../state/actionCreator';
 import { connect } from 'react-redux';
 
-export function Counter(props) {
+export function Counter({increment, decrement, reset, count}) {
+
     return (
         <div>
-            Counter
+            The Count is {count}
+            <button onClick={increment}>Addition</button>
+            <button onClick={decrement}>Subtraction</button>
+            <button onClick={reset}>Clear</button>
         </div>
     )
 }
