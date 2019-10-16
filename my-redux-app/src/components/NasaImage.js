@@ -8,6 +8,16 @@ text-align: left;
 font-family: cursive;
 `;
 
+const DateP = styled.p`
+border: 1px solid black;
+width: 155px;
+height: 35px;
+text-align: center;
+border-radius: 10px;
+padding-top: 10px;
+font-family: cursive;
+`;
+
 const Image = styled.img`
 width: 400px;
 margin:auto;
@@ -16,7 +26,15 @@ display:block;
 
 const H1 = styled.h1`
 text-align:center;
+font-family: cursive;
 
+`;
+
+const Div = styled.div`
+width: 80%;
+margin: auto;
+box-shadow: 0px 1px 3px 0px #aaa;
+padding: 10px;
 `;
 
 function NasaImage({ fetchApi, title, date, explanation, url }) {
@@ -27,13 +45,13 @@ function NasaImage({ fetchApi, title, date, explanation, url }) {
 
     console.log(title);
     return (
-        <div>
+        <Div>
             <H1>NASA INFORMATION</H1>
-            <Paragraph>{title} </Paragraph>
-            <Paragraph> {date}</Paragraph>
-            <Paragraph> {explanation}</Paragraph>
+            <Paragraph><h3>{title} </h3></Paragraph>
+            <DateP> Date--{date}</DateP>
+            <Paragraph> Information {explanation}</Paragraph>
             <Image src={url} />
-        </div>
+        </Div>
     )
 }
 
