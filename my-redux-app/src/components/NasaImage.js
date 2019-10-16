@@ -48,7 +48,7 @@ function NasaImage({ fetchApi, title, date, explanation, url }) {
     console.log(title);
     return (
         <Div>
-            <H1>DAILY NASA INFORMATION</H1>
+            <H1>TODAYS NASA INFORMATION</H1>
             <Paragraph><h3>{title} </h3></Paragraph>
             <DateP> Date--{date}</DateP>
             <Paragraph> Information {explanation}</Paragraph>
