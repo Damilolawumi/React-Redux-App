@@ -31,10 +31,12 @@ font-family: cursive;
 `;
 
 const Div = styled.div`
-width: 80%;
-margin: auto;
-box-shadow: 0px 1px 3px 0px #aaa;
+box-shadow: 0px 1px 4px 0px #aaa;
 padding: 10px;
+width: 953px;
+margin: auto;
+margin-top: 15px;
+margin-bottom: 10px;
 `;
 
 function NasaImage({ fetchApi, title, date, explanation, url }) {
@@ -46,7 +48,7 @@ function NasaImage({ fetchApi, title, date, explanation, url }) {
     console.log(title);
     return (
         <Div>
-            <H1>NASA INFORMATION</H1>
+            <H1>DAILY NASA INFORMATION</H1>
             <Paragraph><h3>{title} </h3></Paragraph>
             <DateP> Date--{date}</DateP>
             <Paragraph> Information {explanation}</Paragraph>
