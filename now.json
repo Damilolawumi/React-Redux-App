@@ -1,0 +1,10 @@
+{
+    "version": 1,
+    "builds": [
+      {
+        "src": "my-redux-app/package.json",
+        "use": "@now/static-build",
+        "config": { "distDir": "my-redux-app/build" }
+      }
+    ]
+  }
